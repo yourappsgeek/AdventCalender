@@ -1,3 +1,8 @@
 <resources>
+
     <string name="app_name">Advent Calender</string>
+
+    <!--Main Activity-->
+    <string name="text_open_your_day">Open your Day</string>
+
 </resources>

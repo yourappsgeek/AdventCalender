@@ -26,3 +26,34 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+// Define versions in a single place
+ext {
+
+    // Sdk and tools
+    applicationId = "com.yourappsgeek.adventcalender"
+    versionCode = 1
+    versionName = "1.0"
+    minSdkVersion = 21
+    targetSdkVersion = 29
+    compileSdkVersion = 29
+    buildToolsVersion = '29.0.2'
+
+    // App dependencies
+    supportLibraryVersion = '1.1.0'
+    materialVersion = '1.0.0'
+    constraintLayoutVersion = '1.1.3'
+    recyclerViewVersion = '1.1.0-beta03'
+    vectorDrawableVersion = '1.0.1'
+    cardViewVersion = '1.0.0'
+
+    // Test dependencies
+    junitVersion = '4.12'
+    espressoVersion = '3.1.0'
+    androidXJunitVersion = '1.1.1'
+
+    // kotlin core
+    kotlinCore = '1.1.0'
+    // kotlin life cycle to support both ViewModel and LiveData
+    kotlinLifeCycle = '2.1.0'
+}
