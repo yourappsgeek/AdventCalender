@@ -4,5 +4,6 @@
 
     <!--Main Activity-->
     <string name="text_open_your_day">Open your Day</string>
+    <string name="msg_found_current_day">Hurray! you found the day</string>
 
 </resources>
