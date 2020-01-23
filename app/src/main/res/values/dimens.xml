@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cardview_default_radius">10dp</dimen>
+    <dimen name="calender_day_width">80dp</dimen>
+    <dimen name="calender_day_height">80dp</dimen>
+</resources>

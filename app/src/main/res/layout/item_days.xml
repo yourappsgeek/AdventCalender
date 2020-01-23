@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="com.yourappsgeek.adventcalender.R" />
+
+        <variable
+            name="model"
+            type="com.yourappsgeek.adventcalender.model.CalenderDay" />
+
+        <variable
+            name="viewModel"
+            type="com.yourappsgeek.adventcalender.presentation.CalenderViewModel" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/calender_day_width"
+        android:layout_height="@dimen/calender_day_height"
+        android:layout_margin="5dp"
+        android:clickable="@{model.openable}"
+        android:elevation="@dimen/cardview_default_elevation"
+        android:onClick="@{() -> model.currentDay ? viewModel.currentDayClicked() : viewModel.onDayClicked()}"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@{context.getResources().getColor(model.backgroundColor)}"
+        app:cardCornerRadius="@dimen/cardview_default_radius">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@{model.day}"
+            android:visibility="@{(model.backgroundColor == R.color.colorAccent) ? View.VISIBLE: View.GONE }" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</layout>
