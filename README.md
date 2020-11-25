@@ -4,6 +4,7 @@
 <strong>Advent Calender App</strong>
 </p>
 
+[![Build Status](https://travis-ci.com/yourappsgeek/AdventCalender.svg?branch=master)](https://travis-ci.com/yourappsgeek/AdventCalender)
 ## Description
 
 - The advent calendar consists of 24 "doors" which can be opened by tapping.
